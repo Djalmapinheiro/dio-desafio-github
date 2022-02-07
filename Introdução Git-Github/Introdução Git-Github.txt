@@ -1,0 +1,34 @@
+Link Download Git: https://git-scm.com/downloads
+
+Link Github: https://github.com/
+
+## Objetos Fundamentais do GIT
+### Blobs, Trees e Commit
+**BLOBS** (arquivos) – Tipo de dados e metadados, bloco básico de composição. As Blobs tem um SHA1 do arquivo.
+**TREES** (pastas)– Armazendo e apontando para tipos de Blobs diferentes. As Tree apontam para as Blobs, que tem um SHA1 desta árvore.
+Obs: Importante é que as Blobs tem uma relação direta com as Trees, portanto caso haja alteração das Blobs o numero SHA1 das blobs se alteram, o que causa alteração também na SHA1 das Trees.
+COMMITS – O commits é objeto que vai juntar tudo, ou seja todas as alterações. O commit é de extrema importância, no GIT. A cada alteração realizada por um Commit ele leva como dados, a mensagem de alteração, o Autor, e o timestamp. 
+
+Chave SSh é uma forma de fornecer uma informação segura com duas chaves.
+
+Comandos Práticos no Git
+
+**Git init**  (Iniciar Repositório)
+Git add “nome do arquivo” ou git add.  (Para mover arquivos e dar início ao versionamento, Este comando adiciona os arquivos solicitados ao ambiente de stage, é uma forma de dizer para o git que você deseja que as modificações daquele arquivo sejam gravadas na próxima remessa.) 
+Git add. (adiciona todos os arquivos disponíveis ao controle de versão.
+Git commit -m “mensagem referencia commit” (Esse comando faz a gravação das modificações do projeto. Uma forma muito usada é o git commit -m “descrição das atualizações do projeto” onde o -m é uma flag que aponta para a mensagem de descrição.
+Git push origin master           (Por fim precisamos subir essas modificações no nosso repositório remoto, para isso basta utilizar o comando git push e, se já estiver tudo devidamente configurado, os arquivos serão salvos no repositório remoto correspondente ao seu repositório local)
+Git branch ( É usado para verificar todas as branches presentes no repositório. Ao utilizar a flag -r no final do comando é possível ver todas as branches presentes no repositório remoto e se você quiser criar uma nova branch basta utilizar este comando: git branch <branch_name>.)
+Git checkout (É o comando utilizado para trocar de branch passando o nome da branch destino no final do comando. Caso a flag -b seja colocada após o “checkout” é possível criar a branch em questão e já trocar para esta imediatamente.)
+Mkdir + nome do arquivo                                        (cria uma pasta dentro do repositório)
+Git Status   ( Este comando permite ver quais arquivos estão sendo “rastreados” pelo git e quais modificações já foram enviadas para o stage. É bem útil para quando se tem dúvidas sobre o que está sendo enviado)
+Ls                (Lista os arquivos dentro da pasta)
+mv strogonoff.md ./receitas/        (cria um arquivo  dentro de uma pasta)
+git confi –list                                     (esse comando lista todas as configurações do git)
+Git remote -v                 (esse comando retorna as lista do repositório remoto)
+Git remote add origin https://github.com/djalmajunior/livro-receitas.git (esse origin desse comando, é somente um apelido, poderia ser qualquer outra palavra)
+Mv (Comando para modificar um arquivo de um repostório, para outro)
+Git reflog   (verifica as versões anteriores do Git)
+Git reset -hard “id do arquivo”  ( esse código retorna a versão anterior do git)
+Git merge + nome do arquivo ( O comando git merge permite que você pegue as linhas de desenvolvimento independentes criadas pelo git branch e as integre em uma ramificação única.)
+
